@@ -2,9 +2,14 @@ import "./App.css";
 import React from "react";
 // 1. createGlobalStyle import해주기
 import { createGlobalStyle } from "styled-components";
+// 1) 패키지 다운 명령: npm i styled-reset
+import reset from "styled-reset";
 
 // 2. 전역 스타일 컴포넌트 생성. 모든 컴포넌트에서 공통으로 스타일이 적용됩니다. 사용 예시: 웹 페이지의 배경색이나 글꼴 설정
 const GlobalStyle = createGlobalStyle`
+// 2) 전역 스타일에 styled-reset 적용 끝!
+${reset}
+
 span {
   background-color: red;
  color: black;
