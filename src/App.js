@@ -5,6 +5,7 @@ import { createGlobalStyle } from "styled-components";
 // 1) 패키지 다운 명령: npm i styled-reset
 import reset from "styled-reset";
 import Content from "./components/Content";
+import Buttons from "./components/Buttons";
 
 // 2. 전역 스타일 컴포넌트 생성. 모든 컴포넌트에서 공통으로 스타일이 적용됩니다. 사용 예시: 웹 페이지의 배경색이나 글꼴 설정
 const GlobalStyle = createGlobalStyle`
@@ -35,6 +36,7 @@ function App() {
       <span>Hello Span1</span>
       <Example />
       <Content />
+      <Buttons />
     </>
   );
 }
